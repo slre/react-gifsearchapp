@@ -1,15 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+//import ReactDOM from 'react-dom/client'; // REACT 17+
+import ReactDOM from 'react-dom'; // react 16
 import GifExpertApp from './GifExpertApp';
 import './index.css';
-//import reportWebVitals from './reportWebVitals';
 
+// React 17+
+/*
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <GifExpertApp />
 );
+*/
+// React 16
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-//reportWebVitals();
+const divRoot = document.querySelector('#root');
+ReactDOM.render( <GifExpertApp  />,divRoot);
+//import reportWebVitals from './reportWebVitals';
