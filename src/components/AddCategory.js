@@ -7,10 +7,12 @@ const AddCategory = ( { setCategories } ) => {
 
   const handleInputChange = ( e ) =>{
     setInputValue( e.target.value );
+    console.log('handleInputChange invoked');
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log('HAndle Submit');
     if( inputValue.trim().length>2 ){
       setCategories ( cats => [inputValue,...cats  ] );
       setInputValue('');
