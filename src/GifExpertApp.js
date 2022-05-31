@@ -10,7 +10,7 @@ export const GifExpertApp = () => {
   //   //setCategories ( [...categories,'Another'] );
   //   setCategories ( cats => [...categories,'Another'] );
   // }
-  //console.log(categories);
+  console.log(categories);
   return (
     <>
       <h2>GifExpertApp</h2>

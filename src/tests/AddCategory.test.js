@@ -14,7 +14,7 @@ describe('Testing AddCategory', () => {
     })
 
     test('Testing snapshot', () => {  
-        expect( wrapper ).toMatchSnapshot;
+        expect( wrapper ).toMatchSnapshot();
 
     });
     test('Must change input text', () => {  

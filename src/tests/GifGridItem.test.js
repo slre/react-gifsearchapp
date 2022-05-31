@@ -9,7 +9,7 @@ describe('Show component correctly',()=> {
 
     let wrapper = shallow(<GifGridItem title = {title} url = {url}  />);
     test('Snapshot',()=>{
-        expect( wrapper ).toMatchSnapshot;
+        expect( wrapper ).toMatchSnapshot();
     });
     test('Must have paragraph with the title', () => {  
         const p = wrapper.find('p');
