@@ -17,4 +17,16 @@ describe('Show component correctly',()=> {
 
     });
 
+    test('Url must be the same as alt', () => {  
+       const img = wrapper.find('img');
+       expect( img.prop('src') ).toBe( url );  
+       //console.log(img.prop('src'),url);   
+    });
+
+    test('must have animated_fadeInn class', () => {  
+        const div = wrapper.find('div');
+        expect( div.prop('className').includes('animate__bounce') ).toBe(true);
+       // console.log(div.prop('className'));
+    })
+
 });
